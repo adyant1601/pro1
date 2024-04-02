@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.Nature's_Dairy.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Dancing Script', cursive;
+            background-image: url('img/logo.jpg');
+            background-size: cover;
+        }
+        .btn{
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(141, 228, 148);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <img src="img/bg.jpg" alt="This is the backgroung image."> -->
+    <header class="header">
+
+        <div class="container">
+            <div class="logo">
+                <h1>Nature's Dairy</h1>
+            </div>
+            <div class="navi">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Delivery Partners</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <input class="serTex" type="text" placeholder="Search this website">
+                <button class="btn">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="order-form">
+        <div class="form-group">
+            <div class="details">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" class="enterbox">
+            </div>
+            <div class="details">
+                <label for="email">Email Id:</label>
+                <input type="text" id="email" placeholder="Enter your email id" class="enterbox">
+            </div>
+
+            <div class="details">
+                <label for="number">Contact Number:</label>
+                <input type="text" placeholder="Enter your number" id="number" class="enterbox">
+            </div>
+
+            <div>
+                <fieldset class="order" id="products">
+                    <legend>Which processed item would you like to order?</legend>
+                    <input type="checkbox" value="Curd" name="products">
+                    <label for="products">Curd</label><br>
+                    <input type="checkbox" value="ButterMilk" name="products">
+                    <label for="products">ButterMilk</label><br>
+                    <input type="checkbox" value="Cheese" name="products">
+                    <label for="products">Cheese</label><br>
+                    <input type="checkbox" value="Organic Paneer" name="products">
+                    <label for="products">Organic Paneer</label>
+                </fieldset>
+            </div>
+
+            <div>
+                <select class="list" id="dropdown" placeholder="Day of delivery">
+                    <option value="0">Day of delivery</option>
+                    <option value="1">Today</option>
+                    <option value="2">Tommorow</option>
+                    <option value="3">Day After Tommorow</option>
+                </select>
+            </div>
+
+            <div>
+                <input class="submitbtn" type="submit" value="Order Now">
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>
